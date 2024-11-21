@@ -1,7 +1,7 @@
-function ToDoForm(){
+function ToDoForm({setTasks, tasks}){
     const handleSubmit = (e) => {
         e.preventDefault()
-      console.log(e);
+    setTasks(...tasks,[e.target[0].value]);
     }
 return(
     <div>
